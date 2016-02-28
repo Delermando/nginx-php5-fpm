@@ -1,0 +1,7 @@
+app:
+  image: delermando/nginx-php5-fpm
+  container_name: app
+  ports:
+    - "80:80"
+  volumes:
+    - ./entrypoint.sh:/usr/local/bin/entrypoint.sh
